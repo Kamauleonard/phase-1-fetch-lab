@@ -1,5 +1,5 @@
 function fetchBooks() {
-  // To pass the tests, don't forget to return your fetch!
+
   return fetch("https://anapioficeandfire.com/api/books")
     .then((resp) => resp.json())
     .then((json) => renderBooks(json));
@@ -18,5 +18,4 @@ document.addEventListener('DOMContentLoaded', function() {
   fetchBooks();
 });
 
-// Don't forget to export the fetchBooks function if you're using Node.js or a module system
-// module.exports = fetchBooks;
+
